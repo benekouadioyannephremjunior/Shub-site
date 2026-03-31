@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHUB — Agence de Communication 360° · Abidjan</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" onclick="showPage('accueil')">
+      <span class="s">S</span><span class="hub">hub</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a class="nav-link active" onclick="showPage('accueil')">Accueil</a>
+      <a class="nav-link" onclick="showPage('offres')">Offres</a>
+      <a class="nav-link" onclick="showPage('apropos')">À propos</a>
+      <a class="nav-link" onclick="showPage('contact')">Contact</a>
+    </div>
+    <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20vos%20offres." class="btn-wa" target="_blank">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+    <button class="burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════ PAGE ACCUEIL ══════════════ -->
+<section class="page active" id="page-accueil">
+
+  <div class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner reveal">
+      <div class="hero-pill">
+        <span class="pulse-dot"></span>
+        Communication 360° · Abidjan
+      </div>
+      <h1 class="hero-title">
+        Votre communication,<br>
+        <em>notre obsession.</em>
+      </h1>
+      <p class="hero-sub">
+        SHUB prend en charge votre stratégie digitale de A à Z —<br class="br-desktop">
+        réseaux sociaux, contenus vidéo, site web et événementiel.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20d%C3%A9marrer." class="cta-main" target="_blank">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Démarrer maintenant
+        </a>
+        <button class="cta-ghost" onclick="showPage('offres')">Voir nos offres</button>
+      </div>
+    </div>
+    <div class="hero-ticker">
+      <div class="ticker-track">
+        <span>Réseaux Sociaux</span><span class="ticker-dot">✦</span>
+        <span>Création de Contenus</span><span class="ticker-dot">✦</span>
+        <span>Site Web</span><span class="ticker-dot">✦</span>
+        <span>Événementiel</span><span class="ticker-dot">✦</span>
+        <span>Stratégie Digitale</span><span class="ticker-dot">✦</span>
+        <span>Tournage & Montage</span><span class="ticker-dot">✦</span>
+        <span>Réseaux Sociaux</span><span class="ticker-dot">✦</span>
+        <span>Création de Contenus</span><span class="ticker-dot">✦</span>
+        <span>Site Web</span><span class="ticker-dot">✦</span>
+        <span>Événementiel</span><span class="ticker-dot">✦</span>
+        <span>Stratégie Digitale</span><span class="ticker-dot">✦</span>
+        <span>Tournage & Montage</span><span class="ticker-dot">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="sec">
+    <div class="sec-inner">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Ce qu'on fait</div>
+        <h2>Une agence,<br><span>tous vos besoins.</span></h2>
+      </div>
+      <div class="srv-grid">
+        <div class="srv reveal-up" onclick="showPage('offres')" style="--d:0s">
+          <div class="srv-num">01</div>
+          <div class="srv-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.4 5.2 3.9 8.5 4-.9-4.7 4-7.4 7.5-4.5.6-.6 1.3-1.1 2-1.5z"/></svg></div>
+          <h3>Communication Réseaux sociaux</h3>
+          <p>Stratégie, création de contenu et gestion quotidienne de vos pages et reporting mensuel.</p>
+          <div class="srv-link">Voir l'offre <span>→</span></div>
+        </div>
+        <div class="srv reveal-up" onclick="showPage('offres')" style="--d:.08s">
+          <div class="srv-num">02</div>
+          <div class="srv-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+          <h3>Création de Contenus vidéo</h3>
+          <p>Du script au montage — shorts, reels, storytelling produits et vidéos de prsentation de marque ou de produit.</p>
+          <div class="srv-link">Voir l'offre <span>→</span></div>
+        </div>
+        <div class="srv reveal-up" onclick="showPage('offres')" style="--d:.16s">
+          <div class="srv-num">03</div>
+          <div class="srv-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>Création de site web</h3>
+          <p>Sites vitrine, pro et e-commerce pour PME, boutiques et jeunes entrepreneurs afin de faciliter la navigation de vos clients.</p>
+          <div class="srv-link">Voir l'offre <span>→</span></div>
+        </div>
+        <div class="srv reveal-up" onclick="showPage('offres')" style="--d:.24s">
+          <div class="srv-num">04</div>
+          <div class="srv-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+          <h3>Couverture d'Événementiel</h3>
+          <p>Couverture photo & vidéo professionnelle pour soirées, lancements et conférences.</p>
+          <div class="srv-link">Voir l'offre <span>→</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OFFRE VEDETTE -->
+  <div class="sec sec-green">
+    <div class="sec-inner">
+      <div class="vedette reveal">
+        <div class="vedette-l">
+          <div class="v-pill">⚡ Offre limitée</div>
+          <div class="v-price">100 000<span> FCFA/mois</span></div>
+          <div class="v-sub">Pack Découverte · 3 mois · Sans publicité</div>
+          <p class="v-desc">On prend en charge toute votre communication. On vous prouve notre valeur — résultats concrets avant tout renouvellement.</p>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20le%20Pack%20D%C3%A9couverte." class="cta-dark" target="_blank">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Je veux démarrer
+          </a>
+        </div>
+        <div class="vedette-r">
+          <div class="v-item"><span class="v-check">✓</span>Stratégie personnalisée complète</div>
+          <div class="v-item"><span class="v-check">✓</span>Création de contenu — visuels & légendes</div>
+          <div class="v-item"><span class="v-check">✓</span>Gestion quotidienne des réseaux</div>
+          <div class="v-item"><span class="v-check">✓</span>Rapport mensuel des résultats</div>
+          <div class="v-item"><span class="v-check">✓</span>Équipe dédiée et réactive</div>
+          <div class="v-upgrade">Après 3 mois → Pack Croissance 250 000 FCFA/mois</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POURQUOI -->
+  <div class="sec">
+    <div class="sec-inner">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Pourquoi SHUB</div>
+        <h2>Ce qui nous<br><span>distingue.</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why reveal-up" style="--d:0s"><span class="why-n">01</span><h4>Résultats d'abord</h4><p>Pas de promesses vagues. Des chiffres clairs chaque mois pour mesurer ce qui fonctionne.</p></div>
+        <div class="why reveal-up" style="--d:.1s"><span class="why-n">02</span><h4>Ancré à Abidjan</h4><p>On connaît le marché ivoirien et ce qui résonne vraiment avec votre clientèle.</p></div>
+        <div class="why reveal-up" style="--d:.2s"><span class="why-n">03</span><h4>Communication complète</h4><p>Réseaux, vidéo, site web, événementiel — tout au même endroit.Une seule offre.</p></div>
+        <div class="why reveal-up" style="--d:.3s"><span class="why-n">04</span><h4>Prix adaptés</h4><p>Tarifs pensés pour les PME et entrepreneurs d'Abidjan. Qualité pro, budget raisonnable.</p></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════ PAGE OFFRES ══════════════ -->
+<section class="page" id="page-offres">
+  <div class="page-top reveal">
+    <div class="eyebrow">Nos offres</div>
+    <h1>Des packs clairs,<br><span>des résultats concrets.</span></h1>
+    <p>Choisissez l'offre qui correspond à votre situation. Pas de jargon — juste ce qu'il faut.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-inner">
+      <div class="cat-label reveal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.4 5.2 3.9 8.5 4-.9-4.7 4-7.4 7.5-4.5.6-.6 1.3-1.1 2-1.5z"/></svg>
+        Réseaux sociaux
+      </div>
+      <div class="packs two">
+        <div class="pack hot reveal-up" style="--d:0s">
+          <div class="pack-glow"></div>
+          <div class="pbadge">⚡ Offre lancement · Places limitées</div>
+          <h3>Pack Découverte</h3>
+          <p class="psub">3 mois pour prouver notre valeur</p>
+          <div class="pprice"><span>100 000</span> FCFA/mois</div>
+          <div class="pnote">Sans publicité · Durée 3 mois</div>
+          <ul class="plist">
+            <li>Stratégie personnalisée complète</li>
+            <li>Création de contenu — visuels & légendes</li>
+            <li>Gestion quotidienne des réseaux</li>
+            <li>Rapport mensuel des résultats</li>
+            <li>Équipe dédiée et réactive</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20le%20Pack%20D%C3%A9couverte." class="pbtn pbtn-main" target="_blank">Démarrer ce pack</a>
+        </div>
+        <div class="pack reveal-up" style="--d:.1s">
+          <div class="pbadge pbadge-n">Offre complète</div>
+          <h3>Pack Croissance</h3>
+          <p class="psub">Communication 360° tout inclus</p>
+          <div class="pprice"><span>250 000</span> FCFA/mois</div>
+          <div class="pnote">Publicité + tournage · Sans engagement</div>
+          <ul class="plist">
+            <li>Tout le Pack Découverte</li>
+            <li>Tournage de contenus régulier</li>
+            <li>Budget publicitaire géré par SHUB</li>
+            <li>Shooting photo produits</li>
+            <li>Reporting avancé + recommandations</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20le%20Pack%20Croissance." class="pbtn pbtn-ghost" target="_blank">Nous contacter →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec sec-alt">
+    <div class="sec-inner">
+      <div class="cat-label reveal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Création de site web
+      </div>
+      <div class="packs three">
+        <div class="pack reveal-up" style="--d:0s">
+          <div class="pbadge pbadge-n">Essentiel</div>
+          <h3>Site Vitrine</h3>
+          <p class="psub">PME, boutiques & entrepreneurs</p>
+          <div class="pprice"><span>150 000</span> FCFA</div>
+          <div class="pnote">Paiement unique · Livraison 7 jours</div>
+          <ul class="plist">
+            <li>1 à 5 pages personnalisées</li>
+            <li>Design sur mesure</li>
+            <li>Responsive mobile</li>
+            <li>Formulaire de contact</li>
+            <li>Lien WhatsApp intégré</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20un%20site%20vitrine." class="pbtn pbtn-ghost" target="_blank">Demander un devis →</a>
+        </div>
+        <div class="pack hot reveal-up" style="--d:.1s">
+          <div class="pack-glow"></div>
+          <div class="pbadge">⚡ Le plus demandé</div>
+          <h3>Site Pro</h3>
+          <p class="psub">Startups & entrepreneurs actifs</p>
+          <div class="pprice"><span>300 000</span> FCFA</div>
+          <div class="pnote">Paiement unique · Livraison 14 jours</div>
+          <ul class="plist">
+            <li>Jusqu'à 10 pages</li>
+            <li>Catalogue produits / services</li>
+            <li>Galerie photos intégrée</li>
+            <li>Blog inclus</li>
+            <li>SEO de base</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20un%20site%20pro." class="pbtn pbtn-main" target="_blank">Demander un devis</a>
+        </div>
+        <div class="pack reveal-up" style="--d:.2s">
+          <div class="pbadge pbadge-n">Premium</div>
+          <h3>Site E-commerce</h3>
+          <p class="psub">Vente en ligne complète</p>
+          <div class="pprice"><span>500 000</span> FCFA</div>
+          <div class="pnote">Paiement unique · Livraison 21 jours</div>
+          <ul class="plist">
+            <li>Boutique en ligne complète</li>
+            <li>Paiement en ligne intégré</li>
+            <li>Gestion des stocks</li>
+            <li>Tableau de bord admin</li>
+            <li>Formation à l'utilisation</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20un%20site%20e-commerce." class="pbtn pbtn-ghost" target="_blank">Demander un devis →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-inner">
+      <div class="cat-label reveal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        Création de contenus vidéo
+      </div>
+      <div class="packs two">
+        <div class="pack hot reveal-up" style="--d:0s">
+          <div class="pack-glow"></div>
+          <div class="pbadge">⚡ Stock mensuel · min. 2 mois</div>
+          <h3>Pack Contenus Mensuel</h3>
+          <p class="psub">2 tournages / mois · livraison complète</p>
+          <div class="pprice"><span>250 000</span> FCFA/mois</div>
+          <ul class="plist">
+            <li>2 jours de tournage par mois</li>
+            <li>8 à 12 vidéos livrées (shorts + reels)</li>
+            <li>2 vidéos storytelling produits</li>
+            <li>Scripts écrits par SHUB</li>
+            <li>Montage + sous-titres inclus</li>
+            <li>Livraison en 7 jours après tournage</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20le%20Pack%20Contenus%20Mensuel." class="pbtn pbtn-main" target="_blank">Démarrer ce pack</a>
+        </div>
+        <div class="pack reveal-up" style="--d:.1s">
+          <div class="pbadge pbadge-n">Prestation unique</div>
+          <h3>Tournage à la carte</h3>
+          <p class="psub">Sans engagement · sur devis</p>
+          <div class="pprice" style="font-size:16px;"><span style="font-size:20px;">À partir de 100 000</span> FCFA/jour</div>
+          <ul class="plist">
+            <li>Minimum 5 vidéos par jour</li>
+            <li>Shorts, reels ou storytelling</li>
+            <li>Script fourni ou rédigé par SHUB</li>
+            <li>Montage + sous-titres inclus</li>
+            <li>Livraison fichiers HD</li>
+            <li>Devis personnalisé selon projet</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20un%20devis%20tournage." class="pbtn pbtn-ghost" target="_blank">Demander un devis →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec sec-alt">
+    <div class="sec-inner">
+      <div class="cat-label reveal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        Couverture événementielle
+      </div>
+      <div class="packs two">
+        <div class="pack reveal-up" style="--d:0s">
+          <div class="pbadge pbadge-n">Demi-journée</div>
+          <h3>Couverture Standard</h3>
+          <p class="psub">Soirées, lancements, présentations</p>
+          <div class="pprice"><span>150 000</span> FCFA/événement</div>
+          <ul class="plist">
+            <li>Photos professionnelles HD</li>
+            <li>Teaser vidéo 60 secondes</li>
+            <li>Reels Instagram / TikTok</li>
+            <li>Livraison sous 48h</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20une%20couverture%20%C3%A9v%C3%A9nementielle." class="pbtn pbtn-ghost" target="_blank">Nous contacter →</a>
+        </div>
+        <div class="pack hot reveal-up" style="--d:.1s">
+          <div class="pack-glow"></div>
+          <div class="pbadge">⚡ Journée complète</div>
+          <h3>Couverture Premium</h3>
+          <p class="psub">Grands événements & conférences</p>
+          <div class="pprice"><span>250 000</span> FCFA/événement</div>
+          <ul class="plist">
+            <li>Tout le pack Standard</li>
+            <li>Mini-documentaire 3 à 5 min</li>
+            <li>Interviews montées</li>
+            <li>Contenu live stories</li>
+            <li>Livraison sous 72h</li>
+          </ul>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20veux%20la%20couverture%20premium." class="pbtn pbtn-main" target="_blank">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PAGE À PROPOS ══════════════ -->
+<section class="page" id="page-apropos">
+  <div class="page-top reveal">
+    <div class="eyebrow">À propos</div>
+    <h1>SHUB, c'est <span>qui ?</span></h1>
+    <p>Une agence de communication digitale née à Abidjan, pour les entreprises d'Abidjan.</p>
+  </div>
+  <div class="sec">
+    <div class="sec-inner">
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <div class="eyebrow">Notre histoire</div>
+          <h2 class="about-h2">Une agence créée<br><span>pour le marché ivoirien.</span></h2>
+          <p>SHUB est née d'un constat simple : beaucoup d'entreprises à Abidjan ont un excellent produit, mais leur communication ne reflète pas leur vraie valeur.</p>
+          <p>Nous croyons qu'une bonne communication digitale n'est pas réservée aux grandes entreprises. C'est pourquoi nous avons construit des offres adaptées aux PME, boutiques locales et jeunes entrepreneurs.</p>
+          <p>Notre approche : on prouve notre valeur avant de vous demander un engagement long terme. 3 mois, des résultats concrets — ensuite vous décidez.</p>
+        </div>
+        <div class="about-vals">
+          <div class="val reveal-up" style="--d:0s"><span class="val-n">01</span><h4>Résultats d'abord</h4><p>Des chiffres clairs chaque mois, pas de promesses vagues.</p></div>
+          <div class="val reveal-up" style="--d:.1s"><span class="val-n">02</span><h4>Ancrage local</h4><p>On connaît Abidjan, ses codes et ce qui résonne vraiment.</p></div>
+          <div class="val reveal-up" style="--d:.2s"><span class="val-n">03</span><h4>Transparence totale</h4><p>Vous savez toujours ce qu'on fait et ce que ça rapporte.</p></div>
+        </div>
+      </div>
+      <div class="mission reveal">
+        <div class="mission-tag">Notre mission</div>
+        <blockquote>"Faire de votre communication digitale votre meilleur commercial — disponible 24h/24, 7j/7."</blockquote>
+        <div class="mission-sig">— L'équipe SHUB · Abidjan</div>
+      </div>
+      <div class="exp-wrap reveal">
+        <div class="eyebrow" style="margin-bottom:20px;">Nos expertises</div>
+        <div class="exp-tags">
+          <span>Stratégie digitale</span><span>Social Media Management</span><span>Création de contenus vidéo</span><span>Tournage & montage</span><span>Développement web</span><span>Publicité Meta & TikTok</span><span>Couverture événementielle</span><span>Identité visuelle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PAGE CONTACT ══════════════ -->
+<section class="page" id="page-contact">
+  <div class="page-top reveal">
+    <div class="eyebrow">Contact</div>
+    <h1>On démarre quand<br><span>vous êtes prêt.</span></h1>
+    <p>Un message WhatsApp suffit. On répond dans la journée.</p>
+  </div>
+  <div class="sec">
+    <div class="sec-inner">
+      <div class="contact-grid reveal">
+        <div class="contact-wa">
+          <div class="wa-ico"><svg width="40" height="40" viewBox="0 0 24 24" fill="#1ED760"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+          <h3>WhatsApp — le plus rapide</h3>
+          <p>Envoyez-nous un message. On répond dans les heures qui suivent pour comprendre votre projet et vous proposer l'offre adaptée.</p>
+          <a href="https://wa.me/2250102771078?text=Bonjour%20SHUB%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20vos%20offres." class="cta-main" target="_blank" style="margin-top:24px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Écrire sur WhatsApp
+          </a>
+          <div class="ci-list">
+            <div class="ci-row"><span class="ci-lbl">Localisation</span><span>Abidjan, Côte d'Ivoire</span></div>
+            <div class="ci-row"><span class="ci-lbl">Disponibilité</span><span>Lun – Sam · 8h à 20h</span></div>
+            <div class="ci-row"><span class="ci-lbl">Langues</span><span>Français · English · Dioula</span></div>
+          </div>
+        </div>
+        <div class="process-box">
+          <div class="eyebrow" style="margin-bottom:24px;">Comment ça se passe ?</div>
+          <div class="steps">
+            <div class="step reveal-up" style="--d:0s"><div class="step-n">01</div><h4>Vous nous écrivez</h4><p>Un message WhatsApp avec votre projet.</p></div>
+            <div class="step reveal-up" style="--d:.1s"><div class="step-n">02</div><h4>On échange</h4><p>Un appel ou RDV pour comprendre votre situation.</p></div>
+            <div class="step reveal-up" style="--d:.2s"><div class="step-n">03</div><h4>On vous propose</h4><p>Une offre sur mesure adaptée à vos objectifs.</p></div>
+            <div class="step reveal-up" style="--d:.3s"><div class="step-n">04</div><h4>On démarre</h4><p>Résultats concrets en 3 mois.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="fl">
+      <div class="footer-logo"><span class="s">S</span><span class="hub">hub</span></div>
+      <div class="footer-tag">Communication 360° · Abidjan</div>
+    </div>
+    <div class="fc">
+      <button onclick="showPage('accueil')">Accueil</button>
+      <button onclick="showPage('offres')">Offres</button>
+      <button onclick="showPage('apropos')">À propos</button>
+      <button onclick="showPage('contact')">Contact</button>
+    </div>
+    <div class="fr">
+      <a href="https://wa.me/2250102771078" class="btn-wa" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <div class="footer-copy">© 2026 SHUB</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
